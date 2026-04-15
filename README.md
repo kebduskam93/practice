@@ -18,3 +18,14 @@ git remote add origin https//githup_adress
 git push origin master
 git pull origin master
 ```
+
+## Python Foundation:
+
+- Primitive Variables
+- Function
+- Object
+- Class
+- Class deep dive
+- Operation & Conditions
+- Loops
+- ...
