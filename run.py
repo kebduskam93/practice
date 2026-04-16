@@ -1,10 +1,14 @@
-man="bola Hello World"
-print(man)
-a = 147
+# Dunder __builtins ___, __init__
+message = "PYTHON: Everything is object"
+print(message)
 
-print ("a:", a)
+result = type(message)
+print("result:", result)
 
-b = 100
-c = 200
-d =b+c
-print(d)
+'''' In Python, there are builtin tools:
+(1) TYPES > int float str list dict
+(2) FUNCTION > print() len() input() type()
+(3) CONSTANT > True False None
+'''
+
+print(dir(__builtins__))
