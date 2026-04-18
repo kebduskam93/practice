@@ -5,7 +5,7 @@
     (4) Error handling system
 '''
 
-import array # package & module
+import array  # package & module
 import math
 from math import ceil, asin
 print("======= What is object =======")
@@ -18,10 +18,24 @@ print(type(True))
 print(type(array))
 print(type(math))
 
-# Paradigm > Functional Programming & OOP 
+# Paradigm > Functional Programming & OOP
 # OOP 4 CONCEPTS > Abstraction | Encapsulation | Inheritence |  Polimorphiism
-result1 = math.ceil(97.7) #CALL
+result1 = math.ceil(97.7)  # CALL
 print("result1:", result1)
 
 result2 = math.ceil(98.7)
 print("result2:", result2)
+
+print("======== Error handling system =======")
+car_dict = dict(name="Tayota", year=2026, electric=True)
+
+try:
+    print("passed here")
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+else:
+    print("Executed successfully wihtout errors")
+finally:
+    print("Final closing logic")

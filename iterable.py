@@ -14,7 +14,7 @@ for ele in range_obj:
 print("======= DICTIONARY =======")
 # Dictionary is Jyson object!
 person = {"name": "Justin", "age": 25, "single": True}
-person_obj = dict(name="Justin", age=25, single=True )
+person_obj = dict(name="Justin", age=25, single=True)
 print(f"the person: {person}")
 print(f"the person_obj: {person_obj}")
 
@@ -31,4 +31,4 @@ print(f"the name: {name}, hobby: {hobby} and balance: {balance}")
 
 del person_obj["single"]
 for key in person_obj:
-    print(f"the key: {key}=> value {person_obj [key]}") 
+    print(f"the key: {key}=> value {person_obj[key]}")
