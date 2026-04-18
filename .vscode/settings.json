@@ -1,5 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "editor.fontSize": 14,
-  "editor.defaultFormatter": null
+  "editor.fontSize": 15
 }
