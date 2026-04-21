@@ -1,4 +1,3 @@
-
 /* B-TASK (NodeJS)
 
 Shunday function tuzing, u 1ta string parametrga ega bolsin, 
@@ -11,9 +10,9 @@ MASALAN: countDigits("ad2a54y79wet0sfgb9")
 // Masalaning yechimi:
 function countDigits(matn) {
   let count = 0;
-  
+
   for (let belgi of matn) {
-     if (belgi !== " " && !isNaN(belgi)) {
+    if (belgi !== " " && !isNaN(belgi)) {
       count++;
     }
   }
@@ -22,9 +21,7 @@ function countDigits(matn) {
 
 console.log(countDigits("ad2a54y79wet0sfgb9"));
 
-console.log("==========================")
-
-
+console.log("==========================");
 
 /*  A-TASK:
        Savol: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi
@@ -39,5 +36,3 @@ console.log("==========================")
 
 // const res = countLetter("e", "engineer");
 // console.log(res);
-
-
