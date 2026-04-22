@@ -1,3 +1,25 @@
+/* C-TASK (NodeJS)
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, 
+hamda agar har ikkala string bir hil harflardan iborat bolsa true 
+aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
+
+// Masalaning yechimi
+function checkContent(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  const bos1 = str1.split("").sort().join("");
+  const bos2 = str1.split("").sort().join("");
+
+  return bos1 === bos2;
+}
+
+console.log(checkContent("maktab", "kambat"));
+console.log(checkContent("maktab", "kamba"));
+
+console.log("===========");
 /* B-TASK (NodeJS)
 
 Shunday function tuzing, u 1ta string parametrga ega bolsin, 
@@ -8,20 +30,20 @@ MASALAN: countDigits("ad2a54y79wet0sfgb9")
 */
 
 // Masalaning yechimi:
-function countDigits(matn) {
-  let count = 0;
+// function countDigits(matn) {
+//   let count = 0;
 
-  for (let belgi of matn) {
-    if (belgi !== " " && !isNaN(belgi)) {
-      count++;
-    }
-  }
-  return count;
-}
+//   for (let belgi of matn) {
+//     if (belgi !== " " && !isNaN(belgi)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-console.log(countDigits("ad2a54y79wet0sfgb9"));
+// console.log(countDigits("ad2a54y79wet0sfgb9"));
 
-console.log("==========================");
+// console.log("==========================");
 
 /*  A-TASK:
        Savol: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi
