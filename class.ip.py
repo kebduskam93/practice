@@ -5,7 +5,7 @@
 '''
 
 print("========= INHERITENCE ======")
-# PARENT > CHILD only (public & protected properties(state + metjod) to childern!)-bollariga shularni bera oladi
+# PARENT > CHILD only (public & protected properties(state + method) to childern!)-bollariga shularni bera oladi
 
 
 class Animal:  # Parent
@@ -38,6 +38,9 @@ class Dog(Animal):
 
     def protect(self):
         print("Yes, I can protect you!")
+
+    def make_voice(self):
+        print(f"the {self.name} can make says {self.sound}")
 
 
 class Cat(Animal):
@@ -94,3 +97,26 @@ print(Dog.description)
 print(dog.voice, fish.voice)
 print("status:", dog._status)
 print("status:", cat._status)
+
+
+print("==== POLIMORPHISM =====")
+
+print('--------')
+dog.make_voice()
+fish.make_voice()
+
+print("------")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+
+# print(f"the result: {a}")
+result = a and b and c and d
+print(f"the result: {result}")
+
+# Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
