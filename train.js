@@ -1,3 +1,23 @@
+// D - TASK(NodeJS);
+
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin
+//  va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+// Masalaning yechimi
+
+function getHighestIndex(arr) {
+  let maxIndex = 0;
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[maxIndex]) {
+      maxIndex = i;
+    }
+  }
+  return maxIndex;
+}
+let box = getHighestIndex([5, 21, 12, 21, 8]);
+console.log(box);
 /* C-TASK (NodeJS)
 
 Shunday function tuzing, u 2ta string parametr ega bolsin, 
@@ -6,18 +26,18 @@ aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 
 // Masalaning yechimi
-function checkContent(str1, str2) {
-  if (str1.length !== str2.length) {
-    return false;
-  }
-  const bos1 = str1.split("").sort().join("");
-  const bos2 = str1.split("").sort().join("");
+// function checkContent(str1, str2) {
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
+//   const bos1 = str1.split("").sort().join("");
+//   const bos2 = str1.split("").sort().join("");
 
-  return bos1 === bos2;
-}
+//   return bos1 === bos2;
+// }
 
-console.log(checkContent("maktab", "kambat"));
-console.log(checkContent("maktab", "kamba"));
+// console.log(checkContent("maktab", "kambat"));
+// console.log(checkContent("maktab", "kamba"));
 
 console.log("===========");
 /* B-TASK (NodeJS)
