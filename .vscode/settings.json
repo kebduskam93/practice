@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.fontSize": 15,
-  "prettier.trailingComma": "none"
+  "prettier.trailingComma": "none",
+  "debugpy.debugJustMyCode": true
 }

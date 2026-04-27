@@ -1,3 +1,21 @@
+// E-TASK (NodeJS)
+
+// Shunday function tuzing, u bitta string argumentni
+// qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+// Masalaning yechimi
+
+function getReverse(s) {
+  let result = "";
+  for (let i = s.length - 1; i >= 0; i--) {
+    result += s[i];
+  }
+  return result;
+}
+
+console.log(getReverse("hello"));
+console.log("===========");
 // D - TASK(NodeJS);
 
 // Shunday function tuzingki unga integerlardan iborat array pass bolsin
@@ -6,18 +24,19 @@
 
 // Masalaning yechimi
 
-function getHighestIndex(arr) {
-  let maxIndex = 0;
+// function getHighestIndex(arr) {
+//   let maxIndex = 0;
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > arr[maxIndex]) {
-      maxIndex = i;
-    }
-  }
-  return maxIndex;
-}
-let box = getHighestIndex([5, 21, 12, 21, 8]);
-console.log(box);
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[maxIndex]) {
+//       maxIndex = i;
+//     }
+//   }
+//   return maxIndex;
+// }
+// let box = getHighestIndex([5, 21, 12, 21, 8]);
+// console.log(box);
+
 /* C-TASK (NodeJS)
 
 Shunday function tuzing, u 2ta string parametr ega bolsin, 
@@ -39,7 +58,7 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 // console.log(checkContent("maktab", "kambat"));
 // console.log(checkContent("maktab", "kamba"));
 
-console.log("===========");
+// console.log("===========");
 /* B-TASK (NodeJS)
 
 Shunday function tuzing, u 1ta string parametrga ega bolsin, 
