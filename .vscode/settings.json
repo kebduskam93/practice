@@ -2,5 +2,6 @@
   "editor.formatOnSave": true,
   "editor.fontSize": 15,
   "prettier.trailingComma": "none",
-  "debugpy.debugJustMyCode": true
+  "debugpy.debugJustMyCode": true,
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }

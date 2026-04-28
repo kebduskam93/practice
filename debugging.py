@@ -3,14 +3,29 @@
     (2) Package Manager & External Package
     (3) Debugging
 '''
-import turtle
+# import turtle
 print("====== Python Packages & Core Package =====")
+''' Python Packages/Modules: Core, File and External '''
 # External Packages > https://docs.python.org/3/library
 
-# core package
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1)
-t.circle(100)
+# # Core  package
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(2)
+# t.circle(150)
+# turtle.done()
 
-turtle.done()
+
+my_file = open("material/message.txt", "r")
+try:
+    content = my_file.read()
+    print("content:", content)
+finally:
+    my_file.close()
+    
+# with 
+with open("material/message.txt", "r") as your_file:
+    your_content = your_file.read()
+    print("your_content:",your_content)
+    
+print("DONE")
