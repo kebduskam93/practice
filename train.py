@@ -1,3 +1,5 @@
+
+print("===========")
 # G-TASK (PYTHON)
 
 # Shunday function tuzingki unga integerlardan iborat array pass 
@@ -7,8 +9,8 @@
 
 # Masalani yechimi
 
-def get_highest_index(nums):
-      return nums.index(max(nums))
+# def get_highest_index(nums):
+#       return nums.index(max(nums))
 
-result = get_highest_index([5, 21, 12, 21, 8])
-print("result:", result) 
+# result = get_highest_index([5, 21, 12, 21, 8])
+# print("result:", result) 
