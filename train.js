@@ -6,9 +6,9 @@
 
 // Masalaning yechimi:
 function majorityElement(array) {
-  let counter = {}; // sonlarni sanash uchun
-  let maxCount = 0; // eng ko'p uchragan son counti
-  let result; // natija
+  let counter = {}; 
+  let maxCount = 0; 
+  let result; 
 
   for (let num of array) {
     counter[num] = (counter[num] || 0) + 1;
