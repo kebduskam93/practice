@@ -6,9 +6,9 @@
 
 // Masalaning yechimi:
 function majorityElement(array) {
-  let counter = {}; // sonlarni sanash uchun
-  let maxCount = 0; // eng ko'p uchragan son counti
-  let result; // natija
+  let counter = {};
+  let maxCount = 0;
+  let result;
 
   for (let num of array) {
     counter[num] = (counter[num] || 0) + 1;
@@ -102,8 +102,8 @@ console.log("===========");
 
 /* C-TASK (NodeJS)
 
-Shunday function tuzing, u 2ta string parametr ega bolsin, 
-hamda agar har ikkala string bir hil harflardan iborat bolsa true 
+Shunday function tuzing, u 2ta string parametr ega bolsin,
+hamda agar har ikkala string bir hil harflardan iborat bolsa true
 aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 
@@ -124,10 +124,10 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 // console.log("===========");
 /* B-TASK (NodeJS)
 
-Shunday function tuzing, u 1ta string parametrga ega bolsin, 
+Shunday function tuzing, u 1ta string parametrga ega bolsin,
 hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 
-MASALAN: countDigits("ad2a54y79wet0sfgb9") 
+MASALAN: countDigits("ad2a54y79wet0sfgb9")
 7ni return qiladi.
 */
 
