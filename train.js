@@ -1,3 +1,19 @@
+// L-TASK (NodeJS)
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi
+// hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+// MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+
+// Masalaning yechimi:
+function reverseSentence(sentence) {
+  return sentence
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+console.log(reverseSentence("we like coding!"));
+
 // J-TASK (NodeJS)
 
 // Shunday function yozing, u parametridagi array ichida
@@ -5,25 +21,25 @@
 // MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 
 // Masalaning yechimi:
-function majorityElement(array) {
-  let counter = {}; 
-  let maxCount = 0; 
-  let result; 
+// function majorityElement(array) {
+//   let counter = {};
+//   let maxCount = 0;
+//   let result;
 
-  for (let num of array) {
-    counter[num] = (counter[num] || 0) + 1;
+//   for (let num of array) {
+//     counter[num] = (counter[num] || 0) + 1;
 
-    if (counter[num] > maxCount) {
-      maxCount = counter[num];
-      result = num;
-    }
-  }
+//     if (counter[num] > maxCount) {
+//       maxCount = counter[num];
+//       result = num;
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-let result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
-console.log("result:", result);
+// let result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
+// console.log("result:", result);
 
 //  H-TASK (NodeJS)
 
