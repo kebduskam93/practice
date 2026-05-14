@@ -1,3 +1,22 @@
+# M-TASK (PYTHON)
+
+# Shunday function yozing, u string qabul qilsin va string 
+# palindrom yani togri oqilganda ham, orqasidan oqilganda ham 
+# bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+# MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+
+# Masalani yechimi:
+def palindrom_check(text):
+    return text == text[::-1]
+
+
+print(palindrom_check("dad"))   
+print(palindrom_check("son"))   
+print(palindrom_check("kiyik")) 
+print(palindrom_check("Omon"))  
+
+
+
 # K-TASK (PYTHON)
 
 # Shunday function yozing, u string qabul qilsin va 
@@ -5,13 +24,13 @@
 # MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 
 # Masalaning yechimi:
-def find_longest(text):
-    words = text.split()          
-    longest = max(words, key=len)
-    return longest
+# def find_longest(text):
+#     words = text.split()          
+#     longest = max(words, key=len)
+#     return longest
 
 
-print(find_longest("I come from Uzbekistan"))
+# print(find_longest("I come from Uzbekistan"))
 
 # I-TASK (PYTHON)
 
